@@ -1,33 +1,30 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
-import { Link, useLocation} from "react-router-dom";
-import About from "./About";
-
 
 function Nav() {
-  const [count, setCount] = useState(0);
-  const [maxCount, setmaxCount] = useState(0);
-
-  const handleMax = () => {
-    if (count > maxCount) {
-      setmaxCount((maxCount) => count);
-    }
-    setCount(0);
-  };
-
   return (
-    <>
-      <nav className="relative flex items-center px-10 py-4">
-        {/* Left-aligned Logo */}
-        <div className="flex items-center">
-          <h1 className="font-bold">Logo</h1>
-        </div>
-        {/* Center-aligned About Us */}
-        <p className="absolute left-1/2 transform -translate-x-1/2">
+    <nav className="relative flex items-center justify-between px-11 py-4">
+      {/* Left-aligned Logo */}
+      <div className="mt-2 flex items-center">
+        <h1 className="font-bold">Logo</h1>
+      </div>
+
+      {/* Center-aligned Navigation Links */}
+      <div className="flex space-x-8">
+        <Link
+          to="/About"
+          className="font-medium hover:font-bold hover:text-blue-700"
+        >
           About Us
-        </p>
-      </nav>
-    </>
+        </Link>
+        <Link
+          to="/"
+          className="font-medium hover:font-bold hover:text-blue-700"
+        >
+          Home
+        </Link>
+      </div>
+    </nav>
   );
 }
 

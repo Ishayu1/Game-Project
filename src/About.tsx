@@ -1,7 +1,13 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 function About() {
-  return <div>About Us Page</div>;
+  return (
+    <div className="ml-11">
+        <h1>
+            About Us
+        </h1>
+    </div>
+  );
 }
 
 export default About;
