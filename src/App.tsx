@@ -14,7 +14,7 @@ function App() {
   ];
   return (
     <Router>
-      <div className="min-h-screen w-full bg-gradient-to-b from-[#8ADEEE] via-[#D0F2F8] to-[#FFFFFF]">
+      <div className="min-h-screen w-screen bg-gradient-to-b from-[#8ADEEE] via-[#D0F2F8] to-[#FFFFFF] box-border overflow-x-hidden">
         <Nav />
         <Routes>
           <Route
@@ -23,16 +23,16 @@ function App() {
               <div>
                 <div className="mt-20 ml-11 w-full max-w-lg">
                   <h1
-                    className="text-4xl bg-clip-text text-transparent"
+                    className="text-3xl bg-clip-text text-transparent"
                     style={{
                       backgroundImage:
-                        "linear-gradient(to right, #000000 25%, #6A92FD 40%)",
+                        "linear-gradient(to right, #000000 40%, #6A92FD 50%)",
                     }}
                   >
                     Know What's Available Instantly
                   </h1>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-center justify-between">
                   <div className="mt-20 ml-11 mr-11 w-full max-w-lg font-normal">
                     <h2 className="text-2xl">Eighth College</h2>
                     <Card machines={machines_eighth}/>
@@ -52,3 +52,6 @@ function App() {
   );
 }
 export default App;
+
+
+

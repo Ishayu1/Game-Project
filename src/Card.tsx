@@ -10,7 +10,7 @@ type Machine = {
 
 function Card({ machines }: {machines: Machine[] }) {
   return (
-    <div className="max-w-lg rounded overflow-hidden shadow-lg mt-8 bg-blue-100 mb-8">
+    <div className="max-w-lg rounded overflow-hidden shadow-lg mt-8 bg-[#c2eef9] mb-8">
       <div className="font-normal text-xl mb-1 ml-4 mt-4">Game Room</div>
       <hr className="mb-2 mx-4" />
       <div className="px-6 py-4 space-y-4">

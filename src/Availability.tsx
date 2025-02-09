@@ -9,7 +9,7 @@ function Availability({ status, inUseCount = 0, totalCount = 0 }: AvailabilityPr
   const usagePercentage = totalCount > 0 ? (inUseCount / totalCount) * 100 : 0;
 
   const partialGradient = {
-    background: `linear-gradient(to right, #688ffe ${usagePercentage - (usagePercentage === 0 || usagePercentage === 100? 0 : 20)}%, #92e7f2 ${usagePercentage}%)`,
+    background: `linear-gradient(to right, #9FCAFF ${usagePercentage - (usagePercentage === 0 || usagePercentage === 100? 0 : 20)}%, #CCF2FC ${usagePercentage}%)`,
   };  
 
   return (
