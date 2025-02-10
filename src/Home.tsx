@@ -11,30 +11,37 @@ function Home() {
   ];
 
   return (
-    <div>
-      <div className="mt-20 ml-11 w-full max-w-lg">
-        <h1
-          className="text-3xl bg-clip-text text-transparent"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, #000000 40%, #6A92FD 50%)",
-          }}
+    <div className="flex flex-col items-center w-full px-4">
+      {/* Title - Centered at all screen sizes */}
+      <div className="mt-20 w-full max-w-4xl px-4 flex justify-center">
+      <h1
+        className="text-4xl text-center sm:text-4xl px-4 break-words bg-clip-text text-transparent"
+        style={{
+            backgroundImage: "linear-gradient(to right, #000000 40%, #6A92FD 50%)",
+        }}
         >
-          Know What's Available Instantly
-        </h1>
+        Know What's Available Instantly
+      </h1>
+
       </div>
-      <div className="flex flex-wrap items-center justify-between">
-        <div className="mt-20 ml-11 mr-11 w-full max-w-lg font-normal">
-          <h2 className="text-2xl">Eighth College</h2>
+  
+      {/* Locations - Side by Side if Wide, Centered if Stacked */}
+      <div className="flex flex-wrap justify-center items-start mt-12 gap-16 w-full">
+        {/* Eighth College */}
+        <div className="mt-10 w-full max-w-lg mx-auto lg:mx-0 px-1">
+          <h2 className="text-2xl text-left">Eighth College</h2>
           <Card machines={machines_eighth} />
         </div>
-        <div className="mt-20 ml-11 mr-11 w-full max-w-lg font-normal">
-          <h2 className="text-2xl">Price Center</h2>
+  
+        {/* Price Center */}
+        <div className="mt-10 w-full max-w-lg mx-auto lg:mx-0 px-1">
+          <h2 className="text-2xl text-left">Price Center</h2>
           <Card machines={machines_price} />
         </div>
       </div>
     </div>
   );
-};
+  
+}
 
 export default Home;
