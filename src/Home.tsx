@@ -17,7 +17,7 @@ function Home() {
       <h1
         className="text-4xl text-center sm:text-4xl px-4 break-words bg-clip-text text-transparent"
         style={{
-            backgroundImage: "linear-gradient(to right, #000000 40%, #6A92FD 50%)",
+            backgroundImage: "linear-gradient(to right, #000000 40%, #6A92FD 60%)",
         }}
         >
         Know What's Available Instantly

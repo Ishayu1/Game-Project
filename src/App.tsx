@@ -1,12 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./Nav";
 import About from "./About";
-import Home from "./Home"; // Import the new component
-import "./index.css";
+import Home from "./Home"; 
 
 function App() {
   return (
-    <Router basename="Game-Project">
+    <Router>
       <div className="min-h-screen w-screen bg-gradient-to-b from-[#8ADEEE] via-[#D0F2F8] to-[#FFFFFF] box-border overflow-x-hidden">
         <Nav />
         <Routes>
