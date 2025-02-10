@@ -1,4 +1,5 @@
 import Availability from "./Availability";
+import "./index.css";
 
 type Machine = {
   name: string;

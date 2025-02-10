@@ -1,3 +1,5 @@
+import "./index.css";
+
 type AvailabilityProps = {
   status: string;
   inUseCount?: number;
