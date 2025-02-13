@@ -26,7 +26,7 @@ function Home() {
       </div>
   
       {/* Locations - Side by Side if Wide, Centered if Stacked */}
-      <div className="flex flex-wrap justify-center items-start mt-12 gap-16 w-full">
+      <div className="flex flex-wrap justify-center items-start mt-20 gap-16 w-full">
         {/* Eighth College */}
         <div className="mt-10 w-full max-w-lg mx-auto lg:mx-0 px-1">
           <h2 className="text-2xl text-left">Eighth College</h2>
