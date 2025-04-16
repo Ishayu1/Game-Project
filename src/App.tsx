@@ -6,7 +6,13 @@ import Home from "./Home";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen w-screen bg-gradient-to-b from-[#8ADEEE] via-[#D0F2F8] to-[#FFFFFF] box-border overflow-x-hidden">
+      <div className="
+        min-h-screen w-screen 
+        transition-colors duration-500 
+        bg-gradient-to-b from-[#8ADEEE] via-[#D0F2F8] to-[#FFFFFF]
+        dark:bg-gradient-to-b dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#334155]
+        box-border overflow-x-hidden
+      ">
         <Nav />
         <Routes>
           <Route path="" element={<Home />} />
